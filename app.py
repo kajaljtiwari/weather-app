@@ -5,9 +5,9 @@ import os
 load_dotenv()
 
 API_KEY=os.getenv("WEATHER_API_KEY")
-st.set_page_config(page_title="Whether App",page_icon="🌈")
+st.set_page_config(page_title="Weather App",page_icon="🌈")
 st.title("Whether App ⛅")
-st.write("Enter the city Name and click on the button to the get the whether data")
+st.write("Enter a city name and click the button to get the weather data")
 city = st.text_input("Enter city name:")
 API_URL=f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}&units=metric"
 
